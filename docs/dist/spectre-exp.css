@@ -1,4 +1,4 @@
-/*! Spectre.css Experimentals v0.5.10 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css Experimentals v0.6.0 | MIT License | github.com/picturepan2/spectre */
 .form-autocomplete {
   position: relative;
 }
@@ -16,7 +16,7 @@
 }
 
 .form-autocomplete .form-autocomplete-input.is-focused {
-  border-color: #5755d9; 
+  border-color: #5755d9;
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
 
@@ -411,7 +411,7 @@
 .comparison-slider {
   height: 50vh;
   overflow: hidden;
-  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
   position: relative;
   width: 100%;
 }
@@ -570,7 +570,7 @@
   border: 0;
   border-radius: .1rem;
   display: block;
-  height: .8rem; 
+  height: .8rem;
   width: 100%;
 }
 
@@ -632,7 +632,7 @@
 
 .off-canvas .off-canvas-toggle {
   display: block;
-  left: .4rem; 
+  left: .4rem;
   position: absolute;
   top: .4rem;
   transition: none;
@@ -647,7 +647,7 @@
   overflow-y: auto;
   position: fixed;
   top: 0;
-  transform: translateX(-100%); 
+  transform: translateX(-100%);
   transition: transform .25s;
   z-index: 200;
 }
@@ -750,7 +750,7 @@
   left: 0;
   outline: none;
   position: absolute;
-  top: 0; 
+  top: 0;
   width: 50%;
   z-index: 100;
 }
@@ -775,7 +775,7 @@
   outline: none;
   position: absolute;
   right: 0;
-  top: 0; 
+  top: 0;
   width: 50%;
   z-index: 100;
 }
@@ -798,7 +798,7 @@
 .parallax .parallax-bottom-left {
   bottom: 0;
   height: 50%;
-  left: 0; 
+  left: 0;
   outline: none;
   position: absolute;
   width: 50%;
@@ -825,7 +825,7 @@
   height: 50%;
   outline: none;
   position: absolute;
-  right: 0; 
+  right: 0;
   width: 50%;
   z-index: 100;
 }
@@ -897,7 +897,7 @@
   appearance: none;
   background: transparent;
   display: block;
-  height: 1.2rem; 
+  height: 1.2rem;
   width: 100%;
 }
 
