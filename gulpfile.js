@@ -26,7 +26,7 @@ function build() {
 function docs_css() {
   return gulp
     .src(['./src/*.scss', './docs/src/scss/*.scss'])
-    .pipe(sass({outputStyle: 'compact', precision: 10})
+    .pipe(sass({outputStyle: 'expanded'})
       .on('error', sass.logError)
     )
     .pipe(autoprefixer())

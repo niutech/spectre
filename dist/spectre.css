@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*! Spectre.css v0.6.0 | MIT License | github.com/picturepan2/spectre */
+/*! Spectre.css v0.6.0 | MIT License | github.com/niutech/spectre */
 /* Manually forked from Normalize.css */
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -848,7 +847,7 @@ html:lang(ko),
   opacity: .95;
 }
 .btn.btn-clear::before {
-  content: "✕";
+  content: "\2715";
 }
 
 .btn-group {
