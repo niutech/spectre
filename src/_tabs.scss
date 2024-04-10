@@ -1,30 +1,21 @@
 // Tabs
 .tab {
   align-items: center;
-  border-bottom: $border-width solid $border-color;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin: $unit-1 0 ($unit-1 - $border-width) 0;
 
   .tab-item {
-    margin-top: 0;
+    border-bottom: $border-width-lg solid transparent;
+    color: inherit;
+    display: block;
+    margin: 0 $unit-2 0 0;
+    padding: $unit-2 $unit-1 $unit-2 - $border-width-lg $unit-1;
+    text-decoration: none;
+    cursor: pointer;
 
-    a {
-      border-bottom: $border-width-lg solid transparent;
-      color: inherit;
-      display: block;
-      margin: 0 $unit-2 0 0;
-      padding: $unit-2 $unit-1 $unit-2 - $border-width-lg $unit-1;
-      text-decoration: none;
-      &:focus,
-      &:hover {
-        color: $link-color;
-      }
-    }
-    &.active a,
-    a.active {
-      border-bottom-color: $primary-color;
+    &:focus,
+    &:hover {
       color: $link-color;
     }
 
@@ -42,10 +33,7 @@
     .tab-item {
       flex: 1 0 0;
       text-align: center;
-
-      a {
-        margin: 0;
-      }
+      margin: 0;
 
       .badge {
         &[data-badge]::after {
@@ -62,5 +50,27 @@
     .badge {
       padding-right: 0;
     }
+  }
+
+  > input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+
+    &:checked + .tab-item {
+      border-bottom-color: $primary-color;
+      color: $link-color;
+    }
+
+    @for $i from 1 through 10 {
+      &:nth-of-type(#{$i}):checked ~ .tab-panel:nth-of-type(#{$i}) {
+        display: block;
+      }
+    }
+  }
+
+  .tab-panel {
+    display: none;
+    flex-basis: 100%;
+    border-top: $border-width solid $border-color;
   }
 }
