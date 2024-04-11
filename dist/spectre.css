@@ -2768,7 +2768,7 @@ summary.accordion-header::-webkit-details-marker {
   padding-right: 0;
 }
 .tab > input[type=radio] {
-  opacity: 0;
+  left: -100%;
   position: absolute;
 }
 .tab > input[type=radio]:checked + .tab-item {

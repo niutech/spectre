@@ -210,11 +210,17 @@
                     <div class="panel-subtitle">THE HULK</div>
                   </div>
                   <nav class="panel-nav">
-                    <ul class="tab tab-block">
-                      <li class="tab-item active"><a href="#panels">Profile</a></li>
-                      <li class="tab-item"><a href="#panels">Files</a></li>
-                      <li class="tab-item"><a href="#panels">Tasks</a></li>
-                    </ul>
+                    <div class="tab tab-block">
+                      <input type="radio" name="tab" id="tab-1" checked>
+                      <label class="tab-item" for="tab-1">Profile</label>
+                      <input type="radio" name="tab" id="tab-2">
+                      <label class="tab-item" for="tab-2">Files</label>
+                      <input type="radio" name="tab" id="tab-3">
+                      <label class="tab-item" for="tab-3">Tasks</label>
+                      <div class="tab-panel"></div>
+                      <div class="tab-panel"></div>
+                      <div class="tab-panel"></div>
+                    </div>
                   </nav>
                   <div class="panel-body">
                     <div class="tile tile-centered">

@@ -21,16 +21,19 @@ block docs-content
             .panel-title.h5.mt-10 Bruce Banner
             .panel-subtitle THE HULK
           nav.panel-nav
-            ul.tab.tab-block
-              li.tab-item.active
-                a(href="#panels")
-                  | Profile
-              li.tab-item
-                a(href="#panels")
-                  | Files
-              li.tab-item
-                a(href="#panels")
-                  | Tasks
+            .tab.tab-block
+              input(type="radio" name="tab" id="tab-1" checked)
+              label.tab-item(for="tab-1")
+                | Profile
+              input(type="radio" name="tab" id="tab-2")
+              label.tab-item(for="tab-2")
+                | Files
+              input(type="radio" name="tab" id="tab-3")
+              label.tab-item(for="tab-3")
+                | Tasks
+              .tab-panel
+              .tab-panel
+              .tab-panel
           .panel-body
             .tile.tile-centered
               .tile-content

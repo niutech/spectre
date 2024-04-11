@@ -8,11 +8,11 @@
   .tab-item {
     border-bottom: $border-width-lg solid transparent;
     color: inherit;
+    cursor: pointer;
     display: block;
     margin: 0 $unit-2 0 0;
     padding: $unit-2 $unit-1 $unit-2 - $border-width-lg $unit-1;
     text-decoration: none;
-    cursor: pointer;
 
     &:focus,
     &:hover {
@@ -54,7 +54,7 @@
 
   > input[type="radio"] {
     position: absolute;
-    opacity: 0;
+    left: -100%;
 
     &:checked + .tab-item {
       border-bottom-color: $primary-color;
@@ -69,8 +69,8 @@
   }
 
   .tab-panel {
+    border-top: $border-width solid $border-color;
     display: none;
     flex-basis: 100%;
-    border-top: $border-width solid $border-color;
   }
 }
